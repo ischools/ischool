@@ -1,0 +1,28 @@
+// $("#btnSaveIt").click(function(){
+//   var form = $(this).closest('form');
+//   var name = $('#name').val();
+//   var email = $('#email').val();
+//   var about_applicant = $('#about_applicant').val();
+//   var why_to_join = $('#why_to_join').val();
+
+//   if(name != "" && email != '' && about_applicant != '' && why_to_join !=''){ 
+//   $.ajax({
+//     url: 'ia_apply/',
+//     data : $(form).serialize(),
+//     type : 'post',
+//     cache : false,
+//     beforeSend: function(){
+//       $("#btnSaveIt").html("<i class='fa fa-spin fa-1x'></i>");
+//     },
+//     success: function(data){
+//       console.log('inside success function data came: '+ data);
+//       if(data == "success"){
+//         // console.log('saved successfully');
+//         alert('hey '+ name +'Successfully received your request. Please check your Email for further communication.');
+//         var okay = 'true';
+//         window.location.reload();//="/ia";
+//       }
+//     },
+//   });
+//   }
+// });

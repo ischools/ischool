@@ -1,0 +1,267 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Schools</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, height=device-height">
+    
+<!--     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+  <link rel="icon" type="image/png" href="{% static 'ia/img/ia_tab_icon.png' %}">  
+
+  <link rel="stylesheet" href="{% static 'ia/css/ia_home.css' %}">
+  
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+  </script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+
+<style type="text/css">
+#apply {
+  position: absolute;
+  top: 35px; right: 40px;
+  font: sans-serif,helvetica;
+  background-color: #A000E6; 
+  color: white;
+  /*text-shadow: 3px 3px 2px black;*/
+  font-weight: bold;
+  font-size:17px;
+  border-radius: 10px;
+  width: 70px;
+  padding: 5px;
+  text-align: center;
+}
+#apply:hover { cursor: pointer; }
+/*#newModalForm input { margin-bottom: 15px; }*/
+
+.ia_text{
+  max-width: 150px;
+  min-width: 150px;
+  max-height: 150px;
+  min-height: 150px;
+  background-color: blue;
+  color: white;  
+  font-weight: bold;
+  font-size: 45px;
+  padding: 5px 5px 5px 15px;
+  border-radius: 15px;
+  /*text-shadow: 3px 2px #008080;*/
+  /*box-shadow: 7px 7px 5px black;*/
+}
+</style>
+</head>
+<body style="background-color: #F5FAE7">
+
+  <div class="row">
+    <div class="col col-md-12">
+      <div id="logo">
+        <a href="http://imperialarkon.hohos.in">Imperial Arkon</a>
+      </div>
+      <div id="apply">
+      <span data-toggle="modal" data-target="#addMyModal">Join</span>
+        <!-- <a href=""> Join </a> -->
+      </div>
+    </div>
+  </div>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="row container">
+  <div class="col col-md-4 col-md-offset-2" style="margin-left: 25%;">
+    <!-- <img class="ia_img" src="{% static 'ia/ia.png' %}" class="img img-responsive"> -->
+    <span class="ia_text">
+      <i class="fa fa-institution"></i>
+    </span>
+    <br><br><br>
+    <!-- <span style="color: gray; font-weight: bold; font-size: 15px;">means</span> &nbsp; -->
+     <span style="color: gray; font-weight: bold; font-size: 15px;">changing the way educational institutes are </span><br>
+     <span class="ia_name text-center">ischool</span> &nbsp; 
+  <br><br>
+  <div class="statement">
+            <p>Hello there,<br> 
+            <h3 style="color: green;" class="new_year"> Happy New Year <i class="fa fa-smile-o fa-1x"></i> </h3> <br>
+              
+              You should have gone through some school, coaching or/and college?
+              Here are we, working on a web App where we are trying to bring everything related to these places online. Simply, we are trying to keep track of the academic journey of everyone.
+              &nbsp; <a class="read-more" href="#">more</a></p>
+
+            <p class="hidden-data">
+             There are some things we are planning to achieve,<br>
+
+             1.Providing Freshers/Juniors an easy way to know who are their seniors and interact with them. <br>
+             2. One can easily get to know any student from their branch or other in their college or any other college, if that has an account on schools. <br>
+             3. A news feed will update you with various events going in various colleges around the nation and abroad.<br>
+             4. After you get out of college, you are doing some job and you had like to go through your college days, you can do so on schools app. You always have access to every guy you studied with in your school, college or coaching (They just need to have an account on schools app).<br>
+             5. This app will keep track of one's academic jouney.<br>
+             6. If you have a friend studying in other college than you, you can find out who he/her is studying with and what different activities are happening in his/her college. 
+             <br>
+             And a lot more exciting things, you will surely love to go through.
+              <br><br><br>
+    
+              - Team Schools 
+            </p>
+
+            <br><br><br><br>
+    </div>
+
+  </div>
+
+  <div class="col col-md-4 pull-right">
+    <br><br><br>
+<!--    <img src="https://media.giphy.com/media/26ufiQuHMK4HbacIE/giphy.gif" width="300" height="350" /> -->
+<iframe src="https://giphy.com/embed/26ufiQuHMK4HbacIE" width="480" height="266" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/university-of-kansas-first-day-the-hill-26ufiQuHMK4HbacIE"></a></p>
+  </div>
+
+</div>
+   
+
+  <footer>
+    <div id="hohos">
+      <a class="fa fa-smile-o fa-1x" href="http://www.hohos.in/">&nbsp; hohos</a> 
+    </div>
+    <div id="schools">
+      <a class="fa fa-university fa-1x" href="http://www.schools.hohos.in">&nbsp; ischool</a> 
+    </div>
+  </footer>
+
+
+<div class="modal fade" id="addMyModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Hello There!</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form" id="newModalForm" method="post" action="{% url 'ia_home' %}">
+          {% csrf_token %} 
+          <div class="form-group">
+            <label class="control-label col-md-3" for="Name">Name</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="name" name="name" placeholder="your name" required/>
+            </div>
+          </div><br>
+
+          <div class="form-group">
+            <label class="control-label col-md-3" for="email">Email</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" id="email" name="email" placeholder="your email" required>
+            </div>
+          </div><br>
+          
+          <div class="form-group">
+            <label class="control-label col-md-3" for="About yourself">About yourself</label>
+            <div class="col-md-9">
+              <textarea type="text" class="form-control" id="about_applicant" name="about_applicant" 
+              placeholder="tell us about yourself? Like what are you doing etc (max 1000 char)" required></textarea>
+            </div>
+          </div><br>
+
+          <div class="form-group">
+            <label class="control-label col-md-3" for="Why to join us?">Why to join us?</label>
+            <div class="col-md-9">
+              <textarea type="text" class="form-control" id="why_to_join" name="why_to_join" 
+              placeholder="why do you want to work with us and how can you make it awesome (max 1000 char)" required></textarea>
+            </div>
+          </div><br>
+
+<!--           <div class="form-group">
+            <label class="control-label col-md-3" for="Resume">Resume</label>
+            <div class="col-md-9">
+              <input type="file" class="form-control" id="action" name="action" placeholder="Enter and action" require>
+            </div>
+          </div> -->
+
+          <br><br><br>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success" id="btnSaveIt">Submit</button>
+            <button type="button" class="btn btn-default" id="btnCloseIt" data-dismiss="modal">Close</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+
+$(function() {
+
+  $("#newModalForm").validate({
+    rules: {
+      name: {
+        required: true,
+        // minlength: 8
+      },
+      email: "required"
+    },
+    messages: {
+      name: {
+        required: "Please enter your name",
+        // minlength: "Your data must be at least 8 characters"
+      },
+      email: "Please enter a valid Email"
+    }
+  });
+});
+</script>
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org/",
+    "@type": "Organization",
+    "url": "http://hohos.in/imperialarkon",
+    "logo": "http://hohos.in/media/img/ia_logo.png"
+  }
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('.hidden-data').hide();
+    $('.read-more').click(function(event){
+      event.preventDefault();
+      $('.read-more').hide();
+      $('.hidden-data').show('slow', );
+    });
+  });
+</script>
+
+{% if status == 'true' %}
+<script type="text/javascript">
+  function success_message(){
+    alert('Successfully received your application. Please check your email for further communication.');
+  }
+  success_message();
+</script>
+{% endif %}
+
+
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+<script type="text/javascript">
+  // autoStart:false, breakDelay:850, loop:true, loopDelay:2005
+  $('.new_year').typeIt({ speed:250, loop:true });
+</script>
+
+</body>
+</html>
+
