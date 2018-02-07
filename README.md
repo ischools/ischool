@@ -1,2 +1,2 @@
-# ia
-manages hohos and ischool
+# ischools
+A web App to bring together all educational institutes
